@@ -46,6 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 .bg-black {
   background: #000 !important; }
 
+.text-white {
+  color: white !important; }
+
 .site-wrap:before {
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
@@ -924,7 +927,8 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%; } }
 
 .author .text {
-  padding: 7rem; }
+  padding: 7rem;
+  color: white; }
   @media (max-width: 991.98px) {
     .author .text {
       padding: 30px; } }
