@@ -927,9 +927,24 @@ h1, h2, h3, h4, h5, h6 {
     .slide-one-item .owl-dots .owl-dot.active > span {
       background: v; }
 
+.cycle-review .owl-dots {
+  display: block; }
+  .cycle-review .owl-dots .owl-dot {
+  display: inline-block; }
+    .cycle-review .owl-dots .owl-dot > span {
+      width: 7px;
+      height: 7px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      background: #ccc; }
+    .cycle-review .owl-dots .owl-dot.active > span {
+      background: v; }
+
 .buy-button {
-  background-color: white;
-  color: black;
+  background-color: #C96EABff;
+  color: white;
   padding: 1em 1.5em;
   text-decoration: none;
   text-transform: uppercase;
@@ -937,22 +952,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .buy-button:hover {
-  background-color: turquoise;
+  color: black;
   cursor: pointer;
 }
 
 .buy-button:active {
-  background-color: black;
+  background-color: rgb(102, 87, 87);
 }
 
 .buy-button:visited {
-  background-color: white;
+  background-color: #C96EABff;
 }
-
 
 .social-icon{
   padding: 0.2em; 
   font-size: 30px;
+  color: #C96EABff;
 }
 .social-icon:hover{
   cursor: pointer;
@@ -960,3 +975,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.7
 } 
 
+#book-section{
+  background-color: #f1edfd;
+}
