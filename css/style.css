@@ -977,3 +977,33 @@ h1, h2, h3, h4, h5, h6 {
 #book-section{
   background-color: #f1edfd;
 }
+
+/* mailchimp subscribe styling */
+
+#mailchimp {
+	background:transparent;
+	color: #3D6392;
+	padding: 20px 15px;
+}
+	#mailchimp input {
+		border: medium none;
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    width: 300px;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+	}
+		#mailchimp input.email { background: #fff }
+		#mailchimp input.name { background: #fff}
+		#mailchimp input[type="submit"] {
+      display: inline-block;
+      color: black;
+      background: #fff;
+      border: 2px solid transparent; }
+      #mailchimp input[type="submit"]:hover {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff; }
