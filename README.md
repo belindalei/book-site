@@ -1,3 +1,3 @@
 # book-site
 
-Website template for Not THAT Rich.
+Website code for notthatrich.com 
