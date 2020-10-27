@@ -182,17 +182,32 @@ jQuery(document).ready(function($) {
 
 		if ( $('.cycle-review').length > 0 ) {
 			$(".cycle-review").owlCarousel({
-        items: 3,
+				items: 3,
+				margin: 10,
         autoplay: true,
         loop: true,
-        margin: 10,
         responsiveClass: true,
         stagePadding: 0,
-        margin: 10,
         animateOut: "fadeOut",
         animateIn: "fadeIn",
         pauseOnHover: false,
-        autoplaySpeed: 7000,
+				autoplaySpeed: 7000,
+				responsiveClass:true,
+				responsive:{
+						0:{
+								items:1,
+								nav:true
+						},
+						600:{
+								items:2,
+								nav:false,
+						},
+						1000:{
+								items:3,
+								nav:false,
+								loop:false
+						}
+					}
       });
 		}
 		
