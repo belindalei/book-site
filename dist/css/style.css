@@ -127,9 +127,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 47px;
   background: #f6f6f6;
   border-radius: 10px;
-  border: 1px solid #f6f6f6; }
+  border: 1px solid #1DA891; }
   .form-control:active, .form-control:focus {
-    border-color: #1DA891; }
+    border-color: #C44D9c; }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
@@ -913,7 +913,7 @@ h1, h2, h3, h4, h5, h6 {
       border-radius: 50%;
       margin-right: 5px;
       margin-bottom: 5px;
-      background: #ccc; }
+      background: #fff;}
     .slide-one-item .owl-dots .owl-dot.active > span {
       background: v; }
 
@@ -976,7 +976,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.7
 } 
 
-#book-section{
+#about-book-section{
   background-color: #f1edfd;
 }
 
@@ -1009,3 +1009,15 @@ h1, h2, h3, h4, h5, h6 {
         background: transparent;
         color: #fff;
         border: 2px solid #fff; }
+
+
+/* subscribe button */
+.subscribe{
+  background-color: #C44D9c;
+  color: white; 
+}
+.subscribe:hover{
+  cursor: pointer;
+  color: white;
+  opacity: 0.7
+} 
