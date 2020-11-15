@@ -618,6 +618,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-slider .owl-nav {
   position: absolute;
+  color: white; 
   bottom: 120px;
   right: 50px;
   z-index: 100; }
