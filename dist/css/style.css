@@ -1,4 +1,8 @@
 /* Base */
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   line-height: 1.7;
   color: gray;
@@ -8,7 +12,9 @@ body {
   background-color: #1DA891;
   /* background-image: url("../images/polygon.png"); */
   background-position: -500px -1585px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+  position: relative;
+}
 
 ::-moz-selection {
   background: #000;
