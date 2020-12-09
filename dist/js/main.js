@@ -4,15 +4,40 @@
  	once: true
  });
 
+ <!-- Initialize Swiper -->
+
+	 var swiper = new Swiper('.swiper-container', {
+
+		 slidesPerView: 1,
+		 autoplay: {
+			 delay: 4000,
+		 },
+
+		 breakpoints: {
+			 // when window width is >= 320px
+			 576: {
+				 slidesPerView: 2,
+			 },
+			 840: {
+				 slidesPerView: 3,
+			 },
+		 },
+	 pagination: {
+	 el: '.swiper-pagination',
+
+ },
+ });
+
+
 jQuery(document).ready(function($) {
 
 	"use strict";
 
 	// loader
 	$(".loader").delay(1000).fadeOut("slow");
-  $("#overlayer").delay(1000).fadeOut("slow");	
+  $("#overlayer").delay(1000).fadeOut("slow");
 
-	
+
 	var siteMenuClone = function() {
 
 		$('.js-clone-nav').each(function() {
@@ -22,11 +47,11 @@ jQuery(document).ready(function($) {
 
 
 		setTimeout(function() {
-			
+
 			var counter = 0;
       $('.site-mobile-menu .has-children').each(function(){
         var $this = $(this);
-        
+
         $this.prepend('<span class="arrow-collapse collapsed">');
 
         $this.find('.arrow-collapse').attr({
@@ -52,8 +77,8 @@ jQuery(document).ready(function($) {
       } else {
         $this.addClass('active');
       }
-      e.preventDefault();  
-      
+      e.preventDefault();
+
     });
 
 		$(window).resize(function() {
@@ -78,7 +103,7 @@ jQuery(document).ready(function($) {
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
 			}
-		}) 
+		})
 
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
@@ -89,7 +114,7 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
-	}; 
+	};
 	siteMenuClone();
 
 
@@ -210,7 +235,7 @@ jQuery(document).ready(function($) {
 					}
       });
 		}
-		
+
 		$('.owl-carousel').owlCarousel({
     loop:true,
 		margin:10,
@@ -269,7 +294,7 @@ jQuery(document).ready(function($) {
 			    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
 			});
 		}
-				
+
 	};
 	siteCountDown();
 
@@ -304,7 +329,7 @@ jQuery(document).ready(function($) {
         setTimeout(function() {
         	$('body').removeClass('offcanvas-menu');
         }, 20);
-        
+
       });
 
     });
@@ -327,7 +352,7 @@ jQuery(document).ready(function($) {
   			$('body').removeClass('offcanvas-menu');
   		}
 
-  	}) 
+  	})
 
   };
   siteScroll();
@@ -344,7 +369,7 @@ jQuery(document).ready(function($) {
 	      columnWidth: '.col-sm-3'
 	    });
 	  });
-	  
+
 	  $container.isotope({ filter: '*' });
 
 	    // filter items on button click
