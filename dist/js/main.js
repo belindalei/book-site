@@ -4,7 +4,7 @@
  	once: true
  });
 
- <!-- Initialize Swiper -->
+//  <!-- Initialize Swiper -->
 
 	 var swiper = new Swiper('.swiper-container', {
 
