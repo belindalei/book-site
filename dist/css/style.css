@@ -1252,10 +1252,12 @@ h6 {
 .buy-button {
   background-color: #c44d9c;
   color: white;
-  padding: 1em 1.5em;
+  /* padding: 1em 1.5em; */
+  padding: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 1em;
+  margin: 1em;
+  text-align: center;
 }
 
 .buy-button:hover {
@@ -1271,6 +1273,11 @@ h6 {
 
 .buy-button:visited {
   background-color: #c44d9c;
+}
+
+.edition{
+  margin: 1em;
+  display: block;
 }
 
 .social-icon {
@@ -1365,3 +1372,4 @@ h6 {
 a{
   color: #c44d9c;
 }
+
